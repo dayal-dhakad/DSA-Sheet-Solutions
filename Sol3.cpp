@@ -14,11 +14,10 @@ class Solution{
     // r : ending index of the array i.e size-1
     // k : find kth smallest element and return using this function
     int kthSmallest(int arr[], int l, int r, int k) {
-       int N = l+1;
-    sort(arr, arr + N);
- 
-    // Return k'th element in the sorted array
-    return arr[k - 1];
+       sort(arr,arr+(r+1));
+        int small=arr[l+k-1];
+        return small;;
+       
     }
 };
 
